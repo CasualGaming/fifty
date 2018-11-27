@@ -8,15 +8,15 @@
 	<title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
 
 	<!-- Stylesheets -->
-	<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+	{{ printf "<!--[if lte IE 8]><script src=\"%s\"></script><![endif]-->" ("js/ie/html5shiv.js" | absURL) | safeHTML }}
 	<link rel="stylesheet" href="{{ "css/main.css" | absURL}}"/>
-	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "css/ie9.css" }}"/><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "css/ie8.css" }}"/><![endif]-->
+	{{ printf "<!--[if lte IE 9]><link rel=\"stylesheet\" href=\"%s\"/><![endif]-->" ("css/ie9.css" | absURL) | safeHTML }}
+	{{ printf "<!--[if lte IE 8]><link rel=\"stylesheet\" href=\"%s\"/><![endif]-->" ("css/ie8.css" | absURL) | safeHTML }}
 	{{ range .Site.Params.custom_css }}
 		<link rel="stylesheet" href="{{ . | absURL }}">
 	{{ end }}
-	<link href="{{ "css/font-awesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- Extra -->
 	{{ partial "head-extra.html" . }}
@@ -24,7 +24,7 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	{{ "<!--[if lt IE 9]>" | safeHTML }}
-	<script src="js/ie/html5shiv.js"></script>
-	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
+	<script src="{{ "js/ie/html5shiv.js" | absURL }}"></script>
+	<script src="{{ "js/ie/html5shiv.jsrespond.min.js" | absURL }}"></script>
 	{{ "<![endif]-->" | safeHTML }}
 </head>

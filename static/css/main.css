@@ -2142,14 +2142,14 @@
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		font-family: "Font Awesome 5 Free";
+		font-style: normal;
+		font-weight: 400;
 	}
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
 			text-transform: none !important;
 		}
 

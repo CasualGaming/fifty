@@ -146,29 +146,29 @@ googleAnalytics = ""
     enable = true
     copyright = "Company Name"
 
-    # Uses font awesome icons
+    # Uses font awesome icons, "fab" means FontAwesome brands
     [[params.footer.social]]
-      icon = "fa-twitter"
+      icon = "fab fa-twitter"
       url= "https://www.twitter.com"
       label = "Twitter"
 
     [[params.footer.social]]
-      icon = "fa-facebook"
+      icon = "fab fa-facebook"
       url= "https://www.facebook.com"
       label = "Facebook"
 
     [[params.footer.social]]
-      icon = "fa-instagram"
+      icon = "fab fa-instagram"
       url= "https://www.instagram.com"
       label = "Instagram"
     
     [[params.footer.social]]
-      icon = "fa-github"
+      icon = "fab fa-github"
       url= "https://www.github.com"
       label = "GitHub"
 
     [[params.footer.social]]
-      icon = "fa-linkedin"
+      icon = "fab fa-linkedin"
       url= "https://www.linkedin.com"
       label = "LinkedIn"
 

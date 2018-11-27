@@ -4,7 +4,7 @@
         <article {{ if eq .containImage true }}class="containImage"{{ end }}>
             <span class="image">
                 {{ if not (eq .image "") }}
-                <img {{ if eq .containImage true }}class="containImage"{{ end }} src="{{ .Site.Params.baseURL }}img/{{ .image }}" alt="" />
+                <img {{ if eq .containImage true }}class="containImage"{{ end }} src="{{ printf "img/%s" .image | absURL }}" alt="" />
                 {{ end }}
             </span>
             <header class="major">

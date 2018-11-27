@@ -48,6 +48,7 @@ Changes in chronological order, starting from when it was forked from [MarcusVir
 * Make last tile full width if odd number of tiles.
 * Remove contant form and Disqus.
 * Generalize footer line format.
+* Upgrade FontAwesome from 4 to 5
 
 ## Contributing
 
