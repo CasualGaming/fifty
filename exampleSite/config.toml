@@ -33,11 +33,8 @@ googleAnalytics = ""
 
   # Navigation Section
   [params.navigation]
-    title = "Fifty"
-    subtitle = "Based on Forty by HTML5 Up"
+    logo = "logo.png"
     menu = "Menu"
-    # Optional logo as brand stored in img/
-    # logo = "logo.png"
 
     [[params.navigation.links]]
       name = "Home"
@@ -61,16 +58,6 @@ googleAnalytics = ""
     # [[params.navigation.links]]
     #    name = "NameOfLink"
     #    url = "UrlOfLink"
-
-    # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
-
-    # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
 
 
   # Banner section
