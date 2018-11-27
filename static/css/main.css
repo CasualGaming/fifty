@@ -1,6 +1,3 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -2777,7 +2774,7 @@
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			width: 45%;
 		}
 
 			.tiles article .image {
@@ -2852,31 +2849,31 @@
 			}
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
+				width: 55%;
+			}
+			
+			.tiles article:last-child:nth-child(2n + 1) {
+				width: 100%;
 			}
 
-			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+			.tiles article:nth-child(5n + 1):before {
+				background-color: #4d9de0;
 			}
 
-			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+			.tiles article:nth-child(5n + 2):before {
+				background-color: #e15554;
 			}
 
-			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+			.tiles article:nth-child(5n + 3):before {
+				background-color: #e1bc29;
 			}
 
-			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+			.tiles article:nth-child(5n + 4):before {
+				background-color: #3bb273;
 			}
 
-			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
-			}
-
-			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+			.tiles article:nth-child(5n + 5):before {
+				background-color: #4d60b3;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3283,30 +3280,6 @@
 			position: absolute;
 		}
 
-			#header.alt.style1 .logo strong {
-				color: #6fc3df;
-			}
-
-			#header.alt.style2 .logo strong {
-				color: #8d82c4;
-			}
-
-			#header.alt.style3 .logo strong {
-				color: #ec8d81;
-			}
-
-			#header.alt.style4 .logo strong {
-				color: #e7b788;
-			}
-
-			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
-			}
-
-			#header.alt.style6 .logo strong {
-				color: #87c5a4;
-			}
-
 		body.is-loading #header.alt {
 			opacity: 0;
 		}
@@ -3493,12 +3466,8 @@
 			}
 
 				#banner > .inner .content > * {
-					margin-left: 1.5em;
+					margin: auto auto auto auto;
 					margin-bottom: 0;
-				}
-
-				#banner > .inner .content > :first-child {
-					margin-left: 0;
 				}
 
 				#banner > .inner .content p {
@@ -3512,35 +3481,12 @@
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+			text-align: center;
 		}
 
 			#banner.major.alt {
 				opacity: 0.75;
 			}
-
-		#banner.style1:after {
-			background-color: #6fc3df;
-		}
-
-		#banner.style2:after {
-			background-color: #8d82c4;
-		}
-
-		#banner.style3:after {
-			background-color: #ec8d81;
-		}
-
-		#banner.style4:after {
-			background-color: #e7b788;
-		}
-
-		#banner.style5:after {
-			background-color: #8ea9e8;
-		}
-
-		#banner.style6:after {
-			background-color: #87c5a4;
-		}
 
 		body.is-loading #banner:after {
 			opacity: 1.0;
@@ -3984,3 +3930,20 @@
 			opacity: 1;
 			visibility: visible;
 		}
+
+#header .logo img {
+	height: 100%;
+	max-width: 100%;
+}
+
+.tiles article img {
+	background-size: cover;
+}
+
+.tiles article.containImage {
+	background-size: contain;
+}
+
+.homepage #header.alt .logo {
+	visibility: hidden;
+}

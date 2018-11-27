@@ -2,15 +2,15 @@
 <!DOCTYPE HTML>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-	{{ partial "header.html" . }}
+	{{ partial "head.html" . }}
 	<body>
 
-	{{ "<!-- Wrapper -->" | safeHTML }}
+	<!-- Wrapper -->
 		<div id="wrapper">
 
 			{{ partial "nav.html" . }}
 
-		{{ "<!-- Main -->" | safeHTML }}
+		<!-- Main -->" | safeHTML }}
 			<div id="main">
 				<div class="inner">
 					<h1>{{ .Site.Params.Error404.heading }}</h1>
@@ -18,14 +18,14 @@
 				</div>
 			</div>
 
-		{{ "<!-- Footer -->" | safeHTML}}
+		<!-- Footer -->
 			{{ if .Site.Params.Footer.enable }}
 				{{ partial "footer.html" . }}
 			{{ end }}
 
 		</div>
 
-	{{ "<!-- Scripts -->" | safeHTML}}
+	<!-- Scripts -->
 		{{ partial "js.html" . }}
 
 	</body>

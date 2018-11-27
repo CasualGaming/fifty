@@ -9,13 +9,11 @@ Outdated images from Forty:
 
 Create a new Hugo site and inside the site folder run either of the following set of commands:
 
-    $ cd themes
-    $ git submodule add https://github.com/CasualGaming/fifty
+    $ git submodule add https://github.com/CasualGaming/fifty themes/fifty
 
 or
 
-    $ cd themes
-    $ git submodule add https://github.com/CasualGaming/fifty
+    $ git clone https://github.com/CasualGaming/fifty themes/fifty
 
 To learn how to create a Hugo Site read the [official guide](//gohugo.io/overview/installing/) of Hugo.
 
@@ -42,7 +40,14 @@ Changes in chronological order, starting from when it was forked from [MarcusVir
 * Update README and theme.toml.
 * Update example site config.
 * Remove Netlify config from example site.
-* Move demo images and `elements.html` from theme to example site.
+* Move demo images and stuff from theme to example site.
+* Make front page tile widths less variable.
+* Change front page tile colors (hardcoded at this point).
+* Replace front page title and button with centered logo.
+* Add tile option for containing the background image within the tile.
+* Make last tile full width if odd number of tiles.
+* Remove contant form and Disqus.
+* Generalize footer line format.
 
 ## Contributing
 

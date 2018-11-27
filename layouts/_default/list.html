@@ -1,15 +1,15 @@
 <html>
-{{ "<!-- Header -->" | safeHTML }}
-    {{ partial "header.html" . }}
+<!-- Header -->
+    {{ partial "head.html" . }}
 
     <body>
 
-    {{ "<!-- Wrapper -->" | safeHTML }}
+    <!-- Wrapper -->
         <div id="wrapper">
 
         {{ partial "nav.html" . }}
 
-        {{ "<!-- Main -->" | safeHTML }}
+        <!-- Main -->
             <div id="main">
 
                 <section id="banner" class="style2">
@@ -50,14 +50,14 @@
                 </section>
             </div>
             
-        {{ "<!-- Footer -->" | safeHTML}}
+        <!-- Footer -->
 			{{ if .Site.Params.footer.enable }}
 				{{ partial "footer.html" . }}
             {{ end }}
         
         </div>
 
-    {{ "<!-- Scripts -->" | safeHTML}}
+    <!-- Scripts -->
         {{ partial "js.html" . }}
         
     </body>

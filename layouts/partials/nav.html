@@ -1,4 +1,4 @@
-{{ "<!-- Header -->" | safeHTML }}
+<!-- Header -->
     <header id="header" class="alt">
         <a href="{{ .Site.BaseURL }}" class="logo">{{ if .Site.Params.Navigation.logo }}<img src="{{ .Site.Params.baseURL }}/img/{{ .Site.Params.Navigation.logo }}" alt="" />{{ else }}<strong>{{ .Site.Params.Navigation.title }}</strong> <span>{{ .Site.Params.Navigation.subtitle }}</span>{{ end }}</a>
         <nav>
@@ -6,7 +6,7 @@
         </nav>
     </header>
 
-{{ "<!-- Menu -->" | safeHTML }}
+<!-- Menu -->
     <nav id="menu">
         <ul class="links">
             {{ range .Site.Params.Navigation.links }}

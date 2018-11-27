@@ -1,4 +1,4 @@
-{{ "<!-- Footer -->" | safeHTML}}
+<!-- Footer -->
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
@@ -7,9 +7,12 @@
                 {{ end }}
             </ul>
             <ul class="copyright">
-                <li>&copy; {{ .Site.Params.Footer.copyright }}</li>
-                {{ range .Site.Params.Footer.quicklinks}}
-                <li>{{ .text }} <a href="{{ .url | safeHTML }}">{{ .alt }}</a></li>
+                <li>&copy;
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script> {{ .Site.Params.Footer.copyright }}</li>
+                {{ range .Site.Params.Footer.line}}
+                <li>{{ .text | markdownify }}</li>
                 {{ end }}
             </ul>
         </div>

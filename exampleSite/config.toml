@@ -7,9 +7,6 @@ theme = "fifty"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
-# Enter your disqus shortname to enable comments
-disqusShortname = ""
-
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
   # To create multi-line text in strings use the """example Text""" format
@@ -25,7 +22,6 @@ disqusShortname = ""
   # Link custom assets relative to /static
   custom_css = []
   custom_js  = []
-  favicon    = "favicon.ico"
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""
@@ -81,10 +77,8 @@ disqusShortname = ""
   [params.banner]
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
-    title = "Hi, my name is Fifty"
+    image = "/img/logo.png"
     subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
-    buttonText = "Get Started"
-
 
   # Tiles Section
   [params.tiles]
