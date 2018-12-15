@@ -14,12 +14,14 @@
 			<!-- Main -->
 			<div id="main">
 
+				<!-- Tiles -->
 				{{ if .Site.Params.Tiles.enable }}
 					{{ partial "tile.html" . }}
 				{{ end }}
 
-				{{ if .Site.Params.Two.enable }}
-					{{ partial "two.html" . }}
+				<!-- About -->
+				{{ if .Site.Params.About.enable }}
+					{{ partial "about.html" . }}
 				{{ end }}
 
 			</div>
