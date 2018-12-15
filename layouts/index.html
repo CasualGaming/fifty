@@ -24,6 +24,11 @@
 					{{ partial "about.html" . }}
 				{{ end }}
 
+				<!-- Sponsors -->
+				{{ if .Site.Params.Sponsors.enable }}
+					{{ partial "sponsors.html" . }}
+				{{ end }}
+
 			</div>
 
 			<!-- Footer -->

@@ -131,7 +131,7 @@
 			});
 
 		// Tiles.
-			var $tiles = $('.tiles > article');
+			var $tiles = $('#tiles > article');
 
 			$tiles.each(function() {
 

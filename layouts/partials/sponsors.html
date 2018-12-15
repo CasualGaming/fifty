@@ -1,0 +1,19 @@
+<section id="sponsors">
+	<div class="inner">
+		<header class="major">
+			<h2>{{ .Site.Params.Sponsors.title }}</h2>
+		</header>
+		{{ range .Site.Params.Sponsors.sponsor }}
+		<article>
+			<span class="image">
+				{{ if not (eq .image "") }}
+				<a href="{{ .url }}" class="link"><img src="{{ printf "img/%s" .image | absURL }}" alt="{{ .alt }}" title="{{ .alt }}" /></a>
+				{{ else }}
+				<p>{{ .alt }}</p>
+				{{ end }}
+			</span>
+			<p class="description">{{ .description }}</p>
+		</article>
+		{{ end }}
+	</div>
+</section>

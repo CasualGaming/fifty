@@ -109,14 +109,7 @@ googleAnalytics = ""
       url = "blogs/ipsum"
     # You can make more showcases by copy and pasting the code above
 
-  [params.blog]
-    # All blogs defined in their own files. You can find example blogs
-    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
-    # at the root of this Hugo site.
-    # For more informtion take a look at the README.
-    # To add more blogs just copy and paste the code.
-
-  # Section Type About
+  # About section
   [params.about]
     enable = true
     title = "Massa libero"
@@ -125,6 +118,17 @@ googleAnalytics = ""
     Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
     Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
     Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
+
+  # Sponsor section
+  [params.sponsors]
+    enable = true
+    title = "Sponsors"
+
+    [[params.sponsors.sponsor]]
+      image = "sponsors/example.png"
+      alt = "Example"
+      url = "https://example.net/"
+      description = "Provides XYZ"
 
   # Footer section
   [params.footer]

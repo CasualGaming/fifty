@@ -2735,7 +2735,7 @@
 
 /* Tiles */
 
-	.tiles {
+	#tiles {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2747,11 +2747,11 @@
 		border-top: 0 !important;
 	}
 
-		.tiles + * {
+		#tiles + * {
 			border-top: 0 !important;
 		}
 
-		.tiles article {
+		#tiles article {
 			-moz-align-items: center;
 			-webkit-align-items: center;
 			-ms-align-items: center;
@@ -2777,24 +2777,24 @@
 			width: 45%;
 		}
 
-			.tiles article .image {
+			#tiles article .image {
 				display: none;
 			}
 
-			.tiles article header {
+			#tiles article header {
 				position: relative;
 				z-index: 3;
 			}
 
-			.tiles article h3 {
+			#tiles article h3 {
 				font-size: 1.75em;
 			}
 
-				.tiles article h3 a:hover {
+				#tiles article h3 a:hover {
 					color: inherit !important;
 				}
 
-			.tiles article .link.primary {
+			#tiles article .link.primary {
 				border: 0;
 				height: 100%;
 				left: 0;
@@ -2804,7 +2804,7 @@
 				z-index: 4;
 			}
 
-			.tiles article:before {
+			#tiles article:before {
 				-moz-transition: opacity 0.5s ease;
 				-webkit-transition: opacity 0.5s ease;
 				-ms-transition: opacity 0.5s ease;
@@ -2820,7 +2820,7 @@
 				z-index: 2;
 			}
 
-			.tiles article:after {
+			#tiles article:after {
 				background-color: rgba(36, 41, 67, 0.25);
 				content: '';
 				display: block;
@@ -2832,11 +2832,11 @@
 				z-index: 1;
 			}
 
-			.tiles article:hover:before {
+			#tiles article:hover:before {
 				opacity: 0;
 			}
 
-			.tiles article.is-transitioning {
+			#tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
 				-ms-transform: scale(0.95);
@@ -2848,37 +2848,37 @@
 				opacity: 0;
 			}
 
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+			#tiles article:nth-child(4n - 1), #tiles article:nth-child(4n - 2) {
 				width: 55%;
 			}
 			
-			.tiles article:last-child:nth-child(2n + 1) {
+			#tiles article:last-child:nth-child(2n + 1) {
 				width: 100%;
 			}
 
-			.tiles article:nth-child(5n + 1):before {
+			#tiles article:nth-child(5n + 1):before {
 				background-color: #4d9de0;
 			}
 
-			.tiles article:nth-child(5n + 2):before {
+			#tiles article:nth-child(5n + 2):before {
 				background-color: #e15554;
 			}
 
-			.tiles article:nth-child(5n + 3):before {
+			#tiles article:nth-child(5n + 3):before {
 				background-color: #e1bc29;
 			}
 
-			.tiles article:nth-child(5n + 4):before {
+			#tiles article:nth-child(5n + 4):before {
 				background-color: #3bb273;
 			}
 
-			.tiles article:nth-child(5n + 5):before {
+			#tiles article:nth-child(5n + 5):before {
 				background-color: #4d60b3;
 			}
 
 		@media screen and (max-width: 1280px) {
 
-			.tiles article {
+			#tiles article {
 				padding: 4em 3em 2em 3em ;
 				height: 30vh;
 				max-height: 30em;
@@ -2889,7 +2889,7 @@
 
 		@media screen and (max-width: 980px) {
 
-			.tiles article {
+			#tiles article {
 				width: 50% !important;
 			}
 
@@ -2897,14 +2897,14 @@
 
 		@media screen and (max-width: 736px) {
 
-			.tiles article {
+			#tiles article {
 				padding: 3em 1.5em 1em 1.5em ;
 				height: 16em;
 				max-height: none;
 				min-height: 0;
 			}
 
-				.tiles article h3 {
+				#tiles article h3 {
 					font-size: 1.5em;
 				}
 
@@ -2912,11 +2912,11 @@
 
 		@media screen and (max-width: 480px) {
 
-			.tiles {
+			#tiles {
 				display: block;
 			}
 
-				.tiles article {
+				#tiles article {
 					height: 20em;
 					width: 100% !important;
 				}
@@ -3936,12 +3936,39 @@
 	max-width: 100%;
 }
 
-.tiles article img {
+#tiles article {
 	background-size: cover;
 }
 
-.tiles article.containImage {
+#tiles article.constrainImage {
 	background-size: contain;
+}
+
+#sponsors {
+	text-align: center;
+}
+
+#sponsors article {
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+	max-width: 300px;
+	height: 200px;
+	margin: 20px 40px 20px 40px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#sponsors article .image {
+	height: 100px;
+}
+
+#sponsors article .image img {
+	max-height: 100px;
+}
+
+#sponsors article .description {
+	height: 100px;
+	text-align: center;
 }
 
 .homepage #header.alt .logo {
