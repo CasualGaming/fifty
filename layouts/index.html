@@ -4,14 +4,14 @@
 	{{ partial "head.html" . }}
 	<body class="homepage">
 
-	<!-- Wrapper -->
+		<!-- Wrapper -->
 		<div id="wrapper">
 
 			{{ partial "nav.html" . }}
 
 			{{ partial "banner.html" . }}
 
-		<!-- Main -->
+			<!-- Main -->
 			<div id="main">
 
 				{{ if .Site.Params.Tiles.enable }}
@@ -24,14 +24,14 @@
 
 			</div>
 
-		<!-- Footer -->
+			<!-- Footer -->
 			{{ if .Site.Params.Footer.enable }}
 				{{ partial "footer.html" . }}
 			{{ end }}
 
 		</div>
 
-	<!-- Scripts -->
+		<!-- Scripts -->
 		{{ partial "js.html" . }}
 
 	</body>
