@@ -3948,6 +3948,10 @@
 	text-align: center;
 }
 
+#sponsors header {
+	text-align: left;
+}
+
 #sponsors article {
 	display: inline-block;
 	vertical-align: top;
@@ -3959,15 +3963,16 @@
 }
 
 #sponsors article .image {
-	height: 100px;
+	height: 100px; /* Half of #sponsors article */
+	max-width: 100%;
 }
 
 #sponsors article .image img {
-	max-height: 100px;
+	max-height: 100px; /* Same as parent */
 }
 
 #sponsors article .description {
-	height: 100px;
+	height: 100px; /* Half of #sponsors article */
 	text-align: center;
 }
 
