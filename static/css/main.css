@@ -3931,6 +3931,8 @@
 			visibility: visible;
 		}
 
+/* New styles below */
+
 #header .logo img {
 	height: 100%;
 	max-width: 100%;
@@ -3959,21 +3961,27 @@
 	max-width: 300px;
 	height: 200px;
 	margin: 20px 40px 20px 40px;
-	border-bottom: 1px solid #FFFFFF;
+	font-size: 0em; /* Removes spacing between elements within article */
 }
 
 #sponsors article .image {
-	height: 100px; /* Half of #sponsors article */
+	height: 90px; /* Half of #sponsors article, minus margin */
 	max-width: 100%;
+	margin-bottom: 10px;
+	font-size: 17pt;
+	font-weight: bold;
 }
 
 #sponsors article .image img {
-	max-height: 100px; /* Same as parent */
+	max-height: 90px; /* Same as parent */
 }
 
 #sponsors article .description {
-	height: 100px; /* Half of #sponsors article */
+	height: 90px; /* Half of #sponsors article, minus padding */
+	padding-top: 10px;
+	border-top: 2px solid #FFFFFF;
 	text-align: center;
+	font-size: 17pt;
 }
 
 .homepage #header.alt .logo {
