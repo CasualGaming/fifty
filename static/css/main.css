@@ -3964,16 +3964,67 @@
 	font-size: 0em; /* Removes spacing between elements within article */
 }
 
-#sponsors article .image {
-	height: 90px; /* Half of #sponsors article, minus margin */
-	max-width: 100%;
-	margin-bottom: 10px;
+#sponsors article * {
 	font-size: 17pt;
-	font-weight: bold;
 }
 
-#sponsors article .image img {
+#sponsors article .image p {
+	font-size: 21pt;
+	font-weight: bold;
+	margin: 0;
+}
+
+@media screen and (max-width: 1680px) {
+	#sponsors article * {
+		font-size: 14pt;
+	}
+
+	#sponsors article .image p {
+		font-size: 18pt;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#sponsors article * {
+		font-size: 12pt;
+	}
+
+	#sponsors article .image p {
+		font-size: 16pt;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#sponsors article * {
+		font-size: 11pt;
+	}
+
+	#sponsors article .image p {
+		font-size: 15pt;
+	}
+}
+
+#sponsors article .image {
+	display: table;
+	table-layout: fixed;
+	height: 90px; /* Half of #sponsors article, minus margin */
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#sponsors article .image * {
+	display: table-cell;
+	max-width: 100%;
 	max-height: 90px; /* Same as parent */
+	vertical-align: middle;
+}
+
+#sponsors article .image * * {
+	display: inline-block;
+}
+
+#sponsors article .image a {
+	border-bottom-style: none;
 }
 
 #sponsors article .description {
@@ -3981,7 +4032,6 @@
 	padding-top: 10px;
 	border-top: 2px solid #FFFFFF;
 	text-align: center;
-	font-size: 17pt;
 }
 
 .homepage #header.alt .logo {
