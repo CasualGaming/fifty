@@ -5,7 +5,7 @@
 		</header>
 		{{ range .Site.Params.Sponsors.sponsor }}
 		<article>
-			<span class="image"><a href="{{ .url }}">
+			<span class="image" {{ if not (eq .backgroundColor "") }} style="background-color: {{ htmlEscape .backgroundColor }}" {{ end }} ><a href="{{ .url }}">
 				{{ if not (eq .image "") }}
 				<img src="{{ printf "img/%s" .image | absURL }}" alt="{{ .alt }}" title="{{ .alt }}" />
 				{{ else }}

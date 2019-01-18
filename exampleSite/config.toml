@@ -126,6 +126,7 @@ googleAnalytics = ""
 
     [[params.sponsors.sponsor]]
       image = "sponsors/example.png"
+      backgroundColor = ""
       alt = "Example"
       url = "https://example.net/"
       description = "Provides XYZ"
