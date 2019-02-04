@@ -62,9 +62,8 @@ googleAnalytics = ""
 
   # Banner section
   [params.banner]
-    # To change the background image on the homepage banner, replace 'banner.jpg' in
-    # the 'static/img' folder.
-    image = "/img/logo.png"
+    bannerImage = "/img/home/banner.jpg"
+    logoImage = "/img/logo-text.png"
     subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
 
   # Tiles Section
@@ -75,37 +74,37 @@ googleAnalytics = ""
     [[params.tiles.showcase]]
       title = "Aliquam"
       subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic01.jpg"
+      image = "/img/pic01.jpg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
       title = "Tempus"
       subtitle = "Feugiat Amet Tempus"
-      image = "pic02.jpg"
+      image = "/img/pic02.jpg"
       url = "blogs/tempus"
 
     [[params.tiles.showcase]]
       title = "Magna"
       subtitle = "Lorem Etiam Nullam"
-      image = "pic03.jpg"
+      image = "/img/pic03.jpg"
       url = "blogs/magna"
 
     [[params.tiles.showcase]]
       title = "Ipsum"
       subtitle = "Nisl Sed Aliquam"
-      image = "pic04.jpg"
+      image = "/img/pic04.jpg"
       url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
       title = "Consequat"
       subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic05.jpg"
+      image = "/img/pic05.jpg"
       url = "blogs/ipsum"
 
     [[params.tiles.showcase]]
       title = "Etiam"
       subtitle = "Feugiat Amet Tempus"
-      image = "pic06.jpg"
+      image = "/img/pic06.jpg"
       url = "blogs/ipsum"
     # You can make more showcases by copy and pasting the code above
 
@@ -125,7 +124,7 @@ googleAnalytics = ""
     title = "Sponsors"
 
     [[params.sponsors.sponsor]]
-      image = "sponsors/example.png"
+      image = "/img/sponsors/example.png"
       backgroundColor = ""
       alt = "Example"
       url = "https://example.net/"

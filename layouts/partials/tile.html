@@ -3,7 +3,7 @@
     <article {{ if eq .constrainImage true }}class="constrainImage"{{ end }}>
         <span class="image">
             {{ if not (eq .image "") }}
-            <img src="{{ printf "img/%s" .image | absURL }}" alt="" />
+            <img src="{{ .image | absURL }}" alt="" />
             {{ end }}
         </span>
         <header class="major">

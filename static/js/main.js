@@ -117,13 +117,13 @@
 			$banner.each(function() {
 
 				var $this = $(this),
-					$image = $this.find('.image'), $img = $image.find('img');
+					$image = $this.find('img.background');
 
 				// Image.
 					if ($image.length > 0) {
 
 						// Set image.
-							$this.css('background-image', 'url(' + $img.attr('src') + ')');
+							$this.css('background-image', 'url(' + $image.attr('src') + ')');
 
 						// Hide original.
 							$image.hide();

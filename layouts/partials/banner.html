@@ -1,7 +1,8 @@
 <section id="banner" class="major">
+    <img class="background" src="{{ .Site.Params.Banner.bannerImage | absURL }}" alt="banner" style="display: none" />
     <div class="inner">
         <header class="major">
-            <img src="{{ .Site.Params.Banner.image | absURL }}" alt="header logo" />
+            <img src="{{ .Site.Params.Banner.logoImage | absURL }}" alt="banner logo" />
         </header>
         <div class="content">
             <p>{{ .Site.Params.Banner.subtitle }}</p>

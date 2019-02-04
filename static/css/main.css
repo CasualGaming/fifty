@@ -3378,7 +3378,6 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../img/banner.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3497,10 +3496,10 @@
 			-webkit-filter: blur(0.125em);
 			-ms-filter: blur(0.125em);
 			filter: blur(0.125em);
-			-moz-transform: translateX(-0.5em);
-			-webkit-transform: translateX(-0.5em);
-			-ms-transform: translateX(-0.5em);
-			transform: translateX(-0.5em);
+			-moz-transform: translateY(-0.5em);
+			-webkit-transform: translateY(-0.5em);
+			-ms-transform: translateY(-0.5em);
+			transform: translateY(-0.5em);
 			opacity: 0;
 		}
 
