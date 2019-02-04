@@ -9,6 +9,81 @@
 		xxsmall: '(max-width: 360px)'
 	});
 
+	/**
+	 * Applies parallax scrolling to an element's background image.
+	 * @return {jQuery} jQuery object.
+	 */
+	$.fn._parallax = (skel.vars.browser == 'ie' || skel.vars.browser == 'edge' || skel.vars.mobile) ? function() { return $(this) } : function(intensity) {
+
+		var	$window = $(window),
+			$this = $(this);
+
+		if (this.length == 0 || intensity === 0)
+			return $this;
+
+		if (this.length > 1) {
+
+			for (var i=0; i < this.length; i++)
+				$(this[i])._parallax(intensity);
+
+			return $this;
+
+		}
+
+		if (!intensity)
+			intensity = 0.25;
+
+		$this.each(function() {
+
+			var $t = $(this),
+				on, off;
+
+			on = function() {
+
+				$t.css('background-position', 'center 100%, center 100%, center 0px');
+
+				$window
+					.on('scroll._parallax', function() {
+
+						var pos = parseInt($window.scrollTop()) - parseInt($t.position().top);
+
+						$t.css('background-position', 'center ' + (pos * (-1 * intensity)) + 'px');
+
+					});
+
+			};
+
+			off = function() {
+
+				$t
+					.css('background-position', '');
+
+				$window
+					.off('scroll._parallax');
+
+			};
+
+			skel.on('change', function() {
+
+				if (skel.breakpoint('medium').active)
+					(off)();
+				else
+					(on)();
+
+			});
+
+		});
+
+		$window
+			.off('load._parallax resize._parallax')
+			.on('load._parallax resize._parallax', function() {
+				$window.trigger('scroll');
+			});
+
+		return $(this);
+
+	};
+
 	$(function() {
 
 		var	$window = $(window),
@@ -47,6 +122,13 @@
 					skel.breakpoint('medium').active
 				);
 			});
+
+		// Scrollex.
+		$('.scrollex').scrollex({
+			offset: function() {
+				return $header.height() - 2;
+			}
+		});
 
 		// Tiles.
 			var $tiles = $('#tiles > article');
@@ -113,11 +195,38 @@
 			if (skel.vars.IEVersion < 9)
 				$header.removeClass('alt');
 
+			if ($banner.length > 0
+			&&	$header.hasClass('alt')) {
+
+				$window.on('resize', function() {
+					$window.trigger('scroll');
+				});
+
+				$window.on('load', function() {
+
+					$banner.scrollex({
+						bottom:		$header.height() + 10,
+						terminate:	function() { $header.removeClass('alt'); },
+						enter:		function() { $header.addClass('alt'); },
+						leave:		function() { $header.removeClass('alt'); $header.addClass('reveal'); }
+					});
+
+					window.setTimeout(function() {
+						$window.triggerHandler('scroll');
+					}, 100);
+
+				});
+
+			}
+
 		// Banner.
 			$banner.each(function() {
 
 				var $this = $(this),
 					$image = $this.find('img.background');
+
+				// Parallax.
+					$this._parallax(0.275);
 
 				// Image.
 					if ($image.length > 0) {
