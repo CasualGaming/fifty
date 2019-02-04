@@ -1,16 +1,16 @@
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js" defer></script>
-<script src="{{ "js/util.js" | absURL }}" defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script src="{{ "js/util.js" | absURL }}"></script>
 
 <!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 
 <!-- Main JS -->
-<script src="{{ "js/main.js" | absURL }}" defer></script>
+<script src="{{ "js/main.js" | absURL }}"></script>
 
 {{ template "_internal/google_analytics_async.html" . }}
 
 {{ range .Site.Params.custom_js }}
-    <script src="{{ . | absURL }}" defer></script>
+    <script src="{{ . | absURL }}"></script>
 {{ end }}
