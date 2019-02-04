@@ -7,7 +7,7 @@
             {{ end }}
         </span>
         <header class="major">
-            <h3><a href="{{ .url | absURL }}" class="link">{{ .title }}</a></h3>
+            <h3><a href="{{ .url | absURL }}" class="link" aria-label="{{ .title }}">{{ .title }}</a></h3>
             <p>{{ .subtitle }}</p>
         </header>
     </article>
