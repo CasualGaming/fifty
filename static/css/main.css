@@ -2292,19 +2292,20 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0;
+				margin-bottom: 20px;
+				width: 5em;
+				text-align: center;
 			}
 
 				ul.icons li:last-child {
 					padding-right: 0;
 				}
-
-			@media screen and (max-width: 736px) {
-
-				ul.icons li {
-					padding: 0 0.75em 0 0;
-				}
-
+			
+			ul.icons li .label {
+				width: 2em;
+				font-size: 0.75em;
+				white-space: nowrap;
 			}
 
 		ul.actions {
@@ -3679,6 +3680,10 @@
 		}
 
 /* Footer */
+
+	#footer {
+		text-align: center;
+	}
 
 	#footer .copyright {
 		font-size: 0.8em;

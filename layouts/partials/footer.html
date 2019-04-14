@@ -2,7 +2,11 @@
     <div class="inner">
         <ul class="icons">
             {{ range .Site.Params.Footer.social }}
-                <li><a href="{{ .url | safeHTML }}" class="icon alt {{ .icon }}" aria-label="{{ .label }}" target="_blank" rel="noopener"><span class="label">{{ .label }}</span></a></li>
+                <li>
+                    <a href="{{ .url | safeHTML }}" class="icon alt {{ .icon }}" aria-label="{{ .label }}" target="_blank" rel="noopener"><span class="label">{{ .label }}</span></a>
+                    <br/>
+                    <span class="label">{{ .label }}</span>
+                </li>
             {{ end }}
         </ul>
         <ul class="copyright">
