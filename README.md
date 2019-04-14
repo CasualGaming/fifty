@@ -35,21 +35,21 @@ To create a new blog post, you can take advantage of archetypes and use the Hugo
 Replace `myBlog.md` with your own file name. You can also just copy the markdown files from forty/exampleSite/content/blogs
 
 ## Changes
-Changes in chronological order, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https://github.com/MarcusVirg/forty/tree/ad1b71f3d7e00d17eb61576f8357261645a158e3):
+Changes in (roughly) chronological order, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https://github.com/MarcusVirg/forty/tree/ad1b71f3d7e00d17eb61576f8357261645a158e3):
 
-* Update README and theme.toml.
-* Update example site config.
 * Remove Netlify config from example site.
 * Move demo images and stuff from theme to example site.
-* Make front page tile widths less variable.
+* Make front page tile widths more even.
 * Change front page tile colors (hardcoded at this point).
 * Replace front page title and button with centered logo.
 * Add tile option for containing the background image within the tile.
 * Make last tile full width if odd number of tiles.
 * Remove contant form and Disqus.
 * Generalize footer line format.
-* Upgrade FontAwesome from 4 to 5
-* Add sponsor section on front page
+* Upgrade FontAwesome from 4 to 5.
+* Add sponsor section on front page.
+* Add social icon text.
+* Center footer.
 
 ## Contributing
 
