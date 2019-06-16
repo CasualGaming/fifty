@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
-	{{ .Hugo.Generator }}
 	<title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
 
 	<!-- Stylesheets -->
