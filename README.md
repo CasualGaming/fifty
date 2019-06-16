@@ -35,8 +35,9 @@ To create a new blog post, you can take advantage of archetypes and use the Hugo
 Replace `myBlog.md` with your own file name. You can also just copy the markdown files from forty/exampleSite/content/blogs
 
 ## Changes
-Changes in (roughly) chronological order, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https://github.com/MarcusVirg/forty/tree/ad1b71f3d7e00d17eb61576f8357261645a158e3):
+Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https://github.com/MarcusVirg/forty/tree/ad1b71f3d7e00d17eb61576f8357261645a158e3):
 
+* Adjust styles (mainly colors, font sizes and spacings).
 * Remove Netlify config from example site.
 * Move demo images and stuff from theme to example site.
 * Make front page tile widths more even.
