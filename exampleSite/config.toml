@@ -1,8 +1,8 @@
 # Site settings
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Fifty"
+title = "Fifty Demo"
 theme = "fifty"
+DefaultContentLanguage = "en"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
