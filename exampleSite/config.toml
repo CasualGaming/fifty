@@ -23,8 +23,14 @@ googleAnalytics = ""
   custom_css = []
   custom_js  = []
 
-  # Just a custom image variable, please define it in .md files for content.
-  image = ""
+  # Image used when shared on social media
+  # Unset to disable
+  # All 4 must be provided if enabled
+  # Can be overridden in pages
+  sharingImage = "/img/logo-text.png"
+  sharingImageType = "image/png"
+  sharingImageWidth = "1024"
+  sharingImageHeight = "1024"
 
   # 404 error customization
   [params.error404]

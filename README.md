@@ -53,6 +53,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Center footer.
 * Use (automatic) tiles on list pages.
 * Change page banner image.
+* Add social/Open Graph image to all pages.
 
 ## Contributing
 

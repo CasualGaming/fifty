@@ -6,6 +6,19 @@
 	{{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
 	<title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
 
+	<!-- Social image -->
+	{{ if .Params.sharingImage }}
+	<meta property="og:image" content="{{ .Params.sharingImage | absURL }}">
+	<meta property="og:image:type" content="{{ .Params.sharingImageType }}">
+	<meta property="og:image:width" content="{{ .Params.sharingImageWidth }}">
+	<meta property="og:image:height" content="{{ .Params.sharingImageHeight }}">
+	{{ else if .Site.Params.sharingImage }}
+	<meta property="og:image" content="{{ .Site.Params.sharingImage | absURL }}">
+	<meta property="og:image:type" content="{{ .Site.Params.sharingImageType }}">
+	<meta property="og:image:width" content="{{ .Site.Params.sharingImageWidth }}">
+	<meta property="og:image:height" content="{{ .Site.Params.sharingImageHeight }}">
+	{{ end }}
+
 	<!-- Stylesheets -->
 	{{ printf "<!--[if lte IE 8]><script src=\"%s\"></script><![endif]-->" ("js/ie/html5shiv.js" | absURL) | safeHTML }}
 	<link rel="stylesheet" href="{{ "css/main.css" | absURL}}"/>
@@ -17,6 +30,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+	<!-- Header JS -->
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	{{ "<!--[if lt IE 9]>" | safeHTML }}
