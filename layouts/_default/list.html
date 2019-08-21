@@ -14,11 +14,11 @@
 
 				<section id="banner" class="style2">
 					<div class="inner">
-			{{ if .Params.image }}
+						{{ if .Params.image }}
 						<span class="image">
-							<img src="{{ .Site.Params.baseURL }}/img/{{ .Params.image }}" alt="" />
+							<img src="{{ .Params.image | absURL }}" alt="directory banner" />
 						</span>
-			{{ end }}
+						{{ end }}
 						<header class="major">
 							<h1>{{ .Title }}</h1>
 						</header>
@@ -28,24 +28,19 @@
 					</div>
 				</section>
 
-				<section id="two" class="spotlights">
+				<section id="tiles">
 					{{ range .Pages }}
-					<section>
-						<a href="{{ .URL }}" class="image">
-							<img src="{{ .Site.Params.baseURL }}/img/{{ .Section }}/{{ .Params.image }}" alt="" data-position="center center" />
-						</a>
-						<div class="content">
-							<div class="inner">
-								<header class="major">
-									<h3>{{ .Title }}</h3>
-								</header>
-								<p>{{ .Description }}</p>
-								<ul class="actions">
-									<li><a href="{{ .URL }}" class="button">Learn more</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+					<article class="constrainImage">
+						<span class="image">
+							{{ if .Params.image }}
+							<img src="{{ .Params.image | absURL }}" alt="" />
+							{{ end }}
+						</span>
+						<header class="major">
+							<h3><a href="{{ .Permalink }}" class="link" aria-label="{{ .Title }}">{{ .Title }}</a></h3>
+							<p>{{ .Description }}</p>
+						</header>
+					</article>
 					{{ end }}
 				</section>
 			</div>

@@ -2,7 +2,7 @@
     {{ range .Site.Params.Tiles.showcase }}
     <article {{ if eq .constrainImage true }}class="constrainImage"{{ end }}>
         <span class="image">
-            {{ if not (eq .image "") }}
+            {{ if .image }}
             <img src="{{ .image | absURL }}" alt="" />
             {{ end }}
         </span>

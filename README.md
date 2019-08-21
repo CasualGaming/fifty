@@ -51,6 +51,8 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Add sponsor section on front page.
 * Add social icon text.
 * Center footer.
+* Use (automatic) tiles on list pages.
+* Change page banner image.
 
 ## Contributing
 
