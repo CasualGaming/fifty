@@ -9,8 +9,6 @@
 <!-- Main JS -->
 <script src="{{ "js/main.js" | absURL }}"></script>
 
-{{ template "_internal/google_analytics_async.html" . }}
-
 {{ range .Site.Params.custom_js }}
     <script src="{{ . | absURL }}"></script>
 {{ end }}
