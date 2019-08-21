@@ -7,6 +7,15 @@
 	<title>{{ .Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}</title>
 
 	<!-- Social image -->
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:type" content="website">
+	{{ if .IsHome}}
+	<meta property="og:title" content="{{ .Site.Params.name }}">
+	<meta property="og:description" content="{{ .Site.Params.description }}">
+	{{ else }}
+	<meta property="og:title" content="{{ .Title }}">
+	<meta property="og:description" content="{{ .Description }}">
+	{{ end }}
 	{{ if .Params.sharingImage }}
 	<meta property="og:image" content="{{ .Params.sharingImage | absURL }}">
 	<meta property="og:image:type" content="{{ .Params.sharingImageType }}">
