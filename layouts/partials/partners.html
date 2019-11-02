@@ -1,9 +1,9 @@
-<section id="sponsors">
+<section id="partners">
 	<div class="inner">
 		<header class="major">
-			<h2>{{ .Site.Params.Sponsors.title }}</h2>
+			<h2>{{ .Site.Params.Partners.title }}</h2>
 		</header>
-		{{ range .Site.Params.Sponsors.sponsor }}
+		{{ range .Site.Params.Partners.partner }}
 		<article>
 			<span class="image" {{ if not (eq .backgroundColor "") }} style="background-color: {{ htmlEscape .backgroundColor }}" {{ end }} ><a href="{{ .url }}">
 				{{ if not (eq .image "") }}

@@ -3945,15 +3945,15 @@
 	background-size: contain;
 }
 
-#sponsors {
+#partners {
 	text-align: center;
 }
 
-#sponsors header {
+#partners header {
 	text-align: left;
 }
 
-#sponsors article {
+#partners article {
 	display: inline-block;
 	vertical-align: top;
 	width: 60%;
@@ -3963,71 +3963,71 @@
 	font-size: 0em; /* Removes spacing between elements within article */
 }
 
-#sponsors article * {
+#partners article * {
 	font-size: 17pt;
 }
 
-#sponsors article .image p {
+#partners article .image p {
 	font-size: 21pt;
 	font-weight: bold;
 	margin: 0;
 }
 
 @media screen and (max-width: 1680px) {
-	#sponsors article * {
+	#partners article * {
 		font-size: 14pt;
 	}
 
-	#sponsors article .image p {
+	#partners article .image p {
 		font-size: 18pt;
 	}
 }
 
 @media screen and (max-width: 1280px) {
-	#sponsors article * {
+	#partners article * {
 		font-size: 12pt;
 	}
 
-	#sponsors article .image p {
+	#partners article .image p {
 		font-size: 16pt;
 	}
 }
 
 @media screen and (max-width: 360px) {
-	#sponsors article * {
+	#partners article * {
 		font-size: 11pt;
 	}
 
-	#sponsors article .image p {
+	#partners article .image p {
 		font-size: 15pt;
 	}
 }
 
-#sponsors article .image {
+#partners article .image {
 	display: table;
 	table-layout: fixed;
-	height: 90px; /* Half of #sponsors article, minus margin */
+	height: 90px; /* Half of #partners article, minus margin */
 	width: 100%;
 	margin-bottom: 10px;
 }
 
-#sponsors article .image * {
+#partners article .image * {
 	display: table-cell;
 	max-width: 100%;
 	max-height: 90px; /* Same as parent */
 	vertical-align: middle;
 }
 
-#sponsors article .image * * {
+#partners article .image * * {
 	display: inline-block;
 }
 
-#sponsors article .image a {
+#partners article .image a {
 	border-bottom-style: none;
 }
 
-#sponsors article .description {
-	height: 90px; /* Half of #sponsors article, minus padding */
+#partners article .description {
+	height: 90px; /* Half of #partners article, minus padding */
 	padding-top: 10px;
 	border-top: 2px solid #FFFFFF;
 	text-align: center;

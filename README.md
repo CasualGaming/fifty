@@ -54,6 +54,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Use (automatic) tiles on list pages.
 * Change page banner image.
 * Add social/Open Graph image to all pages.
+* Rename sponsor section to partner section.
 
 ## Contributing
 
