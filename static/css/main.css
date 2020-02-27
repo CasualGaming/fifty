@@ -4036,3 +4036,32 @@
 .homepage #header.alt .logo {
 	visibility: hidden;
 }
+
+#grasrotandelen .inner {
+	width: 100%;
+	max-width: 800px;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+	#grasrotandelen .inner {
+		padding: 0;
+	}
+}
+
+/* When it changes layout */
+@media screen and (max-width: 767px) {
+	#grasrotandelen .inner {
+		height: 600px;
+	}
+}
+
+#grasrotandelen iframe {
+	flex-grow: 1;
+	border: none;
+	margin: 0;
+	padding: 0;
+}

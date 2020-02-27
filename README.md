@@ -55,6 +55,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Change page banner image.
 * Add social/Open Graph image to all pages.
 * Rename sponsor section to partner section.
+* Add front page section for embedding Grasrotandelen.
 
 ## Contributing
 

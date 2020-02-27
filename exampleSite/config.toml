@@ -136,6 +136,19 @@ googleAnalytics = ""
       url = "https://example.net/"
       description = "Provides XYZ"
 
+  # Grasrotandelen section
+  [params.grasrotandelen]
+    enable = true
+    # "receiver" is the Norwegian org number
+    url = "https://www.norsk-tipping.no/grasrotandelen/stats-iframe?title=lowercase#receiver=XXXXXXXXX"
+
+    [[params.partners.partner]]
+      image = "/img/partners/example.png"
+      backgroundColor = ""
+      alt = "Example"
+      url = "https://example.net/"
+      description = "Provides XYZ"
+
   # Footer section
   [params.footer]
     enable = true

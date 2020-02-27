@@ -29,6 +29,11 @@
 					{{ partial "partners.html" . }}
 				{{ end }}
 
+				<!-- Grasrotandelen -->
+				{{ if .Site.Params.Grasrotandelen.enable }}
+					{{ partial "grasrotandelen.html" . }}
+				{{ end }}
+
 			</div>
 
 			<!-- Footer -->
