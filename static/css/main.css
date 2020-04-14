@@ -1769,15 +1769,14 @@
 	code {
 		background: rgba(212, 212, 255, 0.035);
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
+		font-size: 0.8em;
+		padding: 0.1em 0.2em;
 	}
 
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		margin: 0 0 2em 0;
 	}
 
