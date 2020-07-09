@@ -190,6 +190,19 @@
 					}
 
 			});
+			
+		// Grasrotandelen.
+			// Lazy load iframe on page load
+			$window.on('load', function() {
+				let els = $("#grasrotandelen iframe");
+				if (els.length == 0)
+					return;
+				let el = els.first();
+				let lazy_src = el.attr("lazy_src");
+				if (!lazy_src)
+					return;
+				el.attr("src", lazy_src);
+			});
 
 		// Header.
 			if (skel.vars.IEVersion < 9)
