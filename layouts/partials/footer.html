@@ -10,10 +10,11 @@
             {{ end }}
         </ul>
         <ul class="copyright">
-            <li>&copy;
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script> {{ .Site.Params.Footer.copyright }}</li>
+            <li>
+                &copy;
+                {{ .Site.Params.Footer.copyright }}
+                <script>document.write(new Date().getFullYear())</script>
+            </li>
             {{ range .Site.Params.Footer.line}}
             <li>{{ .text | markdownify }}</li>
             {{ end }}
