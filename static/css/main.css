@@ -4036,16 +4036,28 @@
 	visibility: hidden;
 }
 
+/* Discord and Grasrotandelen iframes */
+
+#discord .inner,
 #grasrotandelen .inner {
 	width: 100%;
-	max-width: 800px;
-	height: 650px;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 }
 
+#discord .inner {
+	max-width: 800px;
+	height: 500px;
+}
+
+#grasrotandelen .inner {
+	max-width: 800px;
+	height: 650px;
+}
+
 @media screen and (max-width: 800px) {
+	#discord .inner,
 	#grasrotandelen .inner {
 		padding: 0;
 	}
@@ -4058,6 +4070,7 @@
 	}
 }
 
+#discord iframe,
 #grasrotandelen iframe {
 	flex-grow: 1;
 	border: none;

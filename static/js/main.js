@@ -191,8 +191,27 @@
 
 			});
 
+		// Discord.
+			// Delay slow iframe load
+				$window.on('load', function() {
+					let placeholders = $("#discord-placeholder");
+					if (placeholders.length == 0)
+						return;
+					let placeholder = placeholders.first();
+					let src = placeholder.attr("data-src");
+					if (!src)
+						return;
+					let frame = $("<iframe>", {
+						src: src,
+						frameborder: "0",
+						allowtransparency: "true",
+						sandbox: "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts",
+					});
+					placeholder.replaceWith(frame);
+				});
+
 		// Grasrotandelen.
-			// Delay load of iframe since it stalls the loading considerably
+			// Delay slow iframe load
 			$window.on('load', function() {
 				let placeholders = $("#grasrotandelen-placeholder");
 				if (placeholders.length == 0)

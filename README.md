@@ -56,7 +56,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Add social/Open Graph image to all pages.
 * Rename sponsor section to partner section.
 * Add front page section for embedding Grasrotandelen.
-* Make Grasrotandelen lazy load the iframe to avoid stalling the page.
+* Add front page section for embedding a Discord server widget.
 
 ## Contributing
 

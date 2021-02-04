@@ -34,6 +34,11 @@
 					{{ partial "grasrotandelen.html" . }}
 				{{ end }}
 
+				<!-- Discord -->
+				{{ if .Site.Params.Discord.enable }}
+					{{ partial "discord.html" . }}
+				{{ end }}
+
 			</div>
 
 			<!-- Footer -->

@@ -139,15 +139,14 @@ googleAnalytics = ""
   # Grasrotandelen section
   [params.grasrotandelen]
     enable = true
-    # "receiver" is the Norwegian org number
+    # The "receiver" is the Norwegian org number
     url = "https://www.norsk-tipping.no/grasrotandelen/stats-iframe?title=lowercase#receiver=XXXXXXXXX"
 
-    [[params.partners.partner]]
-      image = "/img/partners/example.png"
-      backgroundColor = ""
-      alt = "Example"
-      url = "https://example.net/"
-      description = "Provides XYZ"
+  # Discord section
+  [params.discord]
+    enable = true
+    # The server "id" can be found in the Discord server settings
+    url = "https://discord.com/widget?id=XXXX>&theme=dark"
 
   # Footer section
   [params.footer]
