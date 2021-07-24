@@ -6,7 +6,7 @@
 		{{ range .Site.Params.Partners.partner }}
 		<article>
 			<span class="image" {{ if not (eq .backgroundColor "") }} style="background-color: {{ htmlEscape .backgroundColor }}" {{ end }} ><a href="{{ .url }}">
-				{{ if not (eq .image "") }}
+				{{ if .image }}
 				<img src="{{ .image | absURL }}" alt="{{ .alt }}" title="{{ .alt }}" />
 				{{ else }}
 				<p>{{ .alt }}</p>

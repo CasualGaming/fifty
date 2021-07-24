@@ -2295,7 +2295,7 @@
 				ul.icons li:last-child {
 					padding-right: 0;
 				}
-			
+
 			ul.icons li .label {
 				width: 2em;
 				font-size: 0.75em;
@@ -2846,7 +2846,7 @@
 			#tiles article:nth-child(4n - 1), #tiles article:nth-child(4n - 2) {
 				width: 55%;
 			}
-			
+
 			#tiles article:last-child:nth-child(2n + 1) {
 				width: 100%;
 			}
@@ -3967,7 +3967,7 @@
 }
 
 #partners article .image p {
-	font-size: 21pt;
+	font-size: 35pt;
 	font-weight: bold;
 	margin: 0;
 }
@@ -3978,7 +3978,7 @@
 	}
 
 	#partners article .image p {
-		font-size: 18pt;
+		font-size: 30pt;
 	}
 }
 
@@ -3988,7 +3988,7 @@
 	}
 
 	#partners article .image p {
-		font-size: 16pt;
+		font-size: 25pt;
 	}
 }
 
@@ -3998,7 +3998,7 @@
 	}
 
 	#partners article .image p {
-		font-size: 15pt;
+		font-size: 20pt;
 	}
 }
 
