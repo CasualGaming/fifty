@@ -76,7 +76,7 @@ googleAnalytics = ""
   [params.tiles]
     enable = true
     # Display your showcases here.
-    
+
     [[params.tiles.showcase]]
       title = "Aliquam"
       subtitle = "Ipsum Dolor Sit Amet"
@@ -118,9 +118,9 @@ googleAnalytics = ""
   [params.about]
     enable = true
     title = "Massa libero"
-    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
-    Mauris aliquet magna magna sed nunc rhoncus pharetra. 
-    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
+    subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
+    Mauris aliquet magna magna sed nunc rhoncus pharetra.
+    Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
     Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
     Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus."""
 
@@ -139,8 +139,8 @@ googleAnalytics = ""
   # Grasrotandelen section
   [params.grasrotandelen]
     enable = true
-    # The "receiver" is the Norwegian org number
-    url = "https://www.norsk-tipping.no/grasrotandelen/stats-iframe?title=lowercase#receiver=XXXXXXXXX"
+    # The XXX is the Norwegian org number
+    url = "https://www.norsk-tipping.no/grasrotandelen/statistikk/iframe/XXXXXXXXX"
 
   # Discord section
   [params.discord]
@@ -168,7 +168,7 @@ googleAnalytics = ""
       icon = "fab fa-instagram"
       url= "https://www.instagram.com"
       label = "Instagram"
-    
+
     [[params.footer.social]]
       icon = "fab fa-github"
       url= "https://www.github.com"

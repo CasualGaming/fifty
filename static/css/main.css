@@ -4053,7 +4053,7 @@
 
 #grasrotandelen .inner {
 	max-width: 800px;
-	height: 650px;
+	height: 400px;
 }
 
 @media screen and (max-width: 800px) {
@@ -4066,7 +4066,7 @@
 /* When it changes layout */
 @media screen and (max-width: 767px) {
 	#grasrotandelen .inner {
-		height: 600px;
+		height: 300px;
 	}
 }
 
