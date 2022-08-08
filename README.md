@@ -57,6 +57,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Rename sponsor section to partner section.
 * Add front page section for embedding Grasrotandelen.
 * Add front page section for embedding a Discord server widget.
+* Upgrade FontAwesome from 5 to 6.
 
 ## Contributing
 
