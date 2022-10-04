@@ -51,6 +51,11 @@
 	<!-- Google Analytics -->
 	{{ template "_internal/google_analytics_async.html" . }}
 
+	<!-- Plausible analytics -->
+	{{ if and (.Site.Params.plausibleLocalDomain) (.Site.Params.plausibleRemoteDomain) }}
+	<script defer data-domain="{{ .Site.Params.plausibleLocalDomain }}" src="https://{{ .Site.Params.plausibleRemoteDomain }}/js/plausible.js"></script>
+	{{ end }}
+
 	<!-- Extra -->
 	{{ partial "head-extra.html" . }}
 </head>

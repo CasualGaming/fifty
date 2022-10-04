@@ -58,6 +58,7 @@ Changes, starting from when it was forked from [MarcusVirg/forty@ad1b71f](https:
 * Add front page section for embedding Grasrotandelen.
 * Add front page section for embedding a Discord server widget.
 * Upgrade FontAwesome from 5 to 6.
+* Add Plausible support.
 
 ## Contributing
 

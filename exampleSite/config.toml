@@ -19,6 +19,10 @@ googleAnalytics = ""
   name = "Your name"
   description = "Your description"
 
+  # Plausible, set to enable
+  plausibleLocalDomain = ""
+  plausibleRemoteDomain = ""
+
   # Link custom assets relative to /static
   custom_css = []
   custom_js  = []
