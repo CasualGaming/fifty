@@ -49,7 +49,7 @@
 	{{ "<![endif]-->" | safeHTML }}
 
 	<!-- Google Analytics -->
-	{{ template "_internal/google_analytics_async.html" . }}
+	{{ template "_internal/google_analytics.html" . }}
 
 	<!-- Plausible analytics -->
 	{{ if and (.Site.Params.plausibleLocalDomain) (.Site.Params.plausibleRemoteDomain) }}
